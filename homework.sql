@@ -14,9 +14,10 @@ SELECT DISTINCT city FROM customers
 SELECT DISTINCT city, country FROM customers
 
 -- Посчитать кол-во заказчиков.
-SELECT COUNT(DISTINCT customer_id) FROM customers;
+SELECT COUNT(*) FROM customers;
+SELECT COUNT(DISTINCT customer_id) FROM customers; -- Уникальные заказчики.
 
--- Посчитать кол-во уникальных стран в которых "зарегестрированы" заказчики
+-- Посчитать кол-во уникальных стран в которых "зарегистрированы" заказчики
 SELECT COUNT (DISTINCT country) FROM customers
 
 
