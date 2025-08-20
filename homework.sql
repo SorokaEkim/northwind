@@ -127,7 +127,7 @@ CREATE TABLE teacher (
 
 -- Добавить в таблицу после создания колонку middle_name varchar
 ALTER TABLE teacher 
-DROP COLUMN middle_name;
+ADD COLUMN middle_name;
 
 -- Переименовать колонку birthday в birth_date
 ALTER TABLE teacher 
