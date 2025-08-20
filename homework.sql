@@ -135,7 +135,7 @@ RENAME COLUMN birthday TO birth_date;
 
 -- Изменить тип данных колонки phone на varchar(32)
 ALTER TABLE teacher 
-ALTER COLUMN phone TYPE varchar(32);
+ALTER COLUMN phone SET DATA TYPE varchar(32);
 
 -- Создать таблицу exam с полями exam_id serial, exam_name varchar(256), exam_date date
 CREATE TABLE exam (
